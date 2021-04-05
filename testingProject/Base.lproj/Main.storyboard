@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oc6-RI-60t">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-Ss-fV6">
+                                        <rect key="frame" x="57" y="259" width="300" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWg-Zk-9EB">
+                                                <rect key="frame" x="25" y="100" width="250" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="i2H-MY-CUh"/>
+                                                    <constraint firstAttribute="width" constant="250" id="mmk-FZ-tgV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstItem="DWg-Zk-9EB" firstAttribute="centerY" secondItem="zlR-Ss-fV6" secondAttribute="centerY" id="F1I-WD-f64"/>
+                                            <constraint firstAttribute="width" constant="300" id="IDO-rW-wlB"/>
+                                            <constraint firstItem="DWg-Zk-9EB" firstAttribute="centerX" secondItem="zlR-Ss-fV6" secondAttribute="centerX" id="ReP-Bh-wQk"/>
+                                            <constraint firstAttribute="height" constant="300" id="pmV-zH-akb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdn-lV-PwH">
+                                        <rect key="frame" x="57" y="259" width="300" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="Uht-iW-SHg"/>
+                                            <constraint firstAttribute="width" constant="300" id="hF8-cF-0u8"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCL-eM-Tza">
+                                        <rect key="frame" x="121" y="698" width="172" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="Предсказание"/>
+                                        <connections>
+                                            <action selector="transitionCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfc-vb-G8O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="zlR-Ss-fV6" firstAttribute="centerX" secondItem="Oc6-RI-60t" secondAttribute="centerX" id="Jl3-Ug-S7R"/>
+                                    <constraint firstItem="zlR-Ss-fV6" firstAttribute="centerY" secondItem="Oc6-RI-60t" secondAttribute="centerY" id="NU3-Ev-4Tq"/>
+                                    <constraint firstItem="fdn-lV-PwH" firstAttribute="centerY" secondItem="Oc6-RI-60t" secondAttribute="centerY" id="NtZ-ZF-mm7"/>
+                                    <constraint firstItem="fdn-lV-PwH" firstAttribute="centerX" secondItem="Oc6-RI-60t" secondAttribute="centerX" id="OqJ-78-tKp"/>
+                                    <constraint firstItem="TCL-eM-Tza" firstAttribute="centerX" secondItem="Oc6-RI-60t" secondAttribute="centerX" id="hyR-ou-RWJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="TCL-eM-Tza" secondAttribute="bottom" constant="76" id="vsc-jD-AA2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oc6-RI-60t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0re-CJ-7lY"/>
+                            <constraint firstItem="Oc6-RI-60t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Iz-vW-6LQ"/>
+                            <constraint firstItem="Oc6-RI-60t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vx3-rL-aDS"/>
+                            <constraint firstItem="Oc6-RI-60t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d1r-xd-H7j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="fdn-lV-PwH" id="IL7-2i-KFl"/>
+                        <outlet property="secondView" destination="zlR-Ss-fV6" id="S2T-hK-Fh2"/>
+                        <outlet property="secondViewLabel" destination="DWg-Zk-9EB" id="NDc-lh-luM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
